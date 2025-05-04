@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&display=swap");
+:root {
+  --white: #ffffff;
+  --dark: #333333;
+  --green: #28a745;
+  --light-gray: #f7f7f7;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Arial, sans-serif;
+  background: var(--white);
+  color: var(--dark);
+  line-height: 1.6;
+}
+.navegacion {
+  background: var(--white);
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  border-bottom: 1px solid #ddd;
+}
+.navegacion .logo {
+  font-weight: bold;
+}
+.navegacion .menu a {
+  margin-left: 1rem;
+  text-decoration: none;
+  color: var(--dark);
+  font-weight: bold;
+}
+.encabezado {
+  padding: 200px 0;
+  background-size: cover;
+  background: url("../img/ply.png") no-repeat center center;
+  background-position: center;
+  filter: brightness(0.8) contrast(1.1);
+  animation: pan 12s infinite alternate ease-in-out;
+  height: 88vh;
+  z-index: 1;
+}
+/* Keyframes para efecto en el section 1 izquierda a derecha con zoom */
+/* @keyframes pan {
+  0% {
+    transform: scale(1.1) translate(2%, 2%);
+  }
+  100% {
+    transform: scale(1.1) translate(-2%, -2%);
+  }
+} */
+
+.contenido-encabezado {
+  max-width: 600px;
+}
+.titulo-sub {
+  font-size: 1rem;
+  color: var(--tema);
+  font-family: "Kalam", cursive;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 0.5rem;
+}
+.titulo-principal {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.seccion {
+  padding: 4rem 0;
+}
+.seccion:nth-child(even) {
+  background: var(--light-gray);
+}
+.subt {
+  font-family: "Kalam", cursive;
+  color: var(--green);
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 0.5rem;
+}
+.tit {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.contenedor {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 1rem;
+}
+.cuadricula {
+  display: grid;
+  grid-template-areas:
+    "alto cuadro1 cuadro2"
+    "alto ancho ancho";
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-auto-rows: auto;
+  gap: 1rem;
+}
+.alto {
+  grid-area: alto;
+  height: 400px;
+}
+.cuadro1 {
+  grid-area: cuadro1;
+  height: 200px;
+}
+.cuadro2 {
+  grid-area: cuadro2;
+  height: 200px;
+}
+.ancho {
+  grid-area: ancho;
+  height: 200px;
+}
+.cuadricula img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+.animate-on-scroll.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+@media (max-width: 768px) {
+  .cuadricula {
+    grid-template-columns: 1fr;
+    grid-template-areas: none;
+  }
+  .alto,
+  .cuadro1,
+  .cuadro2,
+  .ancho {
+    height: auto;
+  }
+}
