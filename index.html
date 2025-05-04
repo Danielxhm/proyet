@@ -3,10 +3,9 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Descubre El Salvador</title>
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -18,79 +17,306 @@
       <a href="restaurantes.html">Restaurantes</a>
       <a href="aventuras.html">Aventuras</a>
     </div>
+    <div class="menu-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
   </nav>
 
-  <section class="encabezado">
+  <section class="encabezado" style="background-image: url('img/ply.png');">
     <div class="contenedor animate-on-scroll">
       <div class="contenido-encabezado">
-        <div class="titulo-sub">
-          <p>Un país pequeño con una riqueza inmensa</p>
-        </div>
-        <h1 class="titulo-principal">Descubre El Salvador</h1>
+        <div class="titulo-sub animate-item">Un país pequeño con una riqueza inmensa</div>
+        <h1 class="titulo-principal animate-item">Descubre El Salvador</h1>
       </div>
     </div>
   </section>
 
   <div class="seccion animate-on-scroll">
-    <div class="subt">Playas de Ensueño</div>
-    <div class="tit">Playas</div>
-    <div class="contenedor cuadricula">
-      <div class="alto"><img src="img/145228.jpg">
+    <div class="contenedor">
+      <div class="subt animate-item">Playas de Ensueño</div>
+      <div class="tit animate-item">Playas</div>
+      <div class="grid-destacado">
+        <div class="grid-item item-1">
+          <img src="img/145228.jpg" alt="Playa El Salvador">
+          <div class="overlay">
+            <h3>El Tunco</h3>
+            <p>Paraíso para surfistas</p>
+          </div>
+        </div>
+        <div class="grid-item item-2">
+          <img src="img/73352893-2.webp" alt="Playa El Salvador">
+          <div class="overlay">
+            <h3>Costa del Sol</h3>
+            <p>Arenas doradas</p>
+          </div>
+        </div>
+        <div class="grid-item item-3">
+          <img src="img/TORREJAS.webp" alt="Playa El Salvador">
+          <div class="overlay">
+            <h3>La Libertad</h3>
+            <p>Surf de clase mundial</p>
+          </div>
+        </div>
+        <div class="grid-item item-4">
+          <img src="img/Tamal-de-elote.webp" alt="Playa El Salvador">
+          <div class="overlay">
+            <h3>El Sunzal</h3>
+            <p>Puestas de sol espectaculares</p>
+          </div>
+        </div>
       </div>
-      <div class="cuadro1"><img src="img/73352893-2.webp">
+      <div class="info-box animate-slide-right">
+        <h3>Joyas Costeras de El Salvador</h3>
+        <p>El Salvador cuenta con más de 300 kilómetros de costa en el Pacífico, donde se encuentran algunas de las
+          playas más hermosas de Centroamérica. Desde El Tunco, famoso por sus olas perfectas y ambiente bohemio, hasta
+          Costa del Sol con sus extensas arenas doradas, cada playa tiene su propio encanto.</p>
+        <ul class="info-list">
+          <li>El Tunco: punto de encuentro para surfistas de todo el mundo</li>
+          <li>El Zonte: la nueva "Bitcoin Beach" y excelente para principiantes del surf</li>
+          <li>Costa del Sol: perfecta para familias con aguas tranquilas</li>
+          <li>La Barra de Santiago: refugio natural con manglares y tortugas marinas</li>
+        </ul>
       </div>
-      <div class="cuadro2"><img src="img/TORREJAS.webp"></div>
-      <div class="ancho"><img src="img/Tamal-de-elote.webp"></div>
     </div>
-    <p>El Salvador cuenta con playas doradas y olas perfectas para surfistas y amantes del sol.</p>
   </div>
+
   <div class="seccion animate-on-scroll">
-    <div class="subt">Volcanes Activos</div>
-    <div class="tit">Volcanes</div>
-    <div class="contenedor cuadricula">
-      <div class="alto"><img src="img/cafe-santa-cruz.jpg"></div>
-      <div class="cuadro1"><img src="img/catg2.png"></div>
-      <div class="cuadro2"><img src="img/costasol.jpg"></div>
-      <div class="ancho"><img src="img/gastroedit.png"></div>
-    </div>
-    <p>Disfruta de trekking en Santa Ana, Izalco, San Miguel y Concepción con vistas panorámicas.</p>
-  </div>
-  <div class="seccion animate-on-scroll">
-    <div class="subt">Cultura y Tradiciones</div>
-    <div class="tit">Cultura</div>
-    <div class="contenedor cuadricula">
-      <div class="alto"><img src="img/marquegastro1.webp"></div>
-      <div class="cuadro1"><img src="img/marquegastro2.webp">
+    <div class="contenedor">
+      <div class="subt animate-item">Volcanes Activos</div>
+      <div class="tit animate-item">Volcanes</div>
+      <div class="grid-panorama">
+        <div class="grid-item item-1">
+          <img src="img/cafe-santa-cruz.jpg" alt="Volcán Santa Ana">
+          <div class="overlay">
+            <h3>Volcán Santa Ana</h3>
+            <p>El más alto del país</p>
+          </div>
+        </div>
+        <div class="grid-item item-2">
+          <img src="img/catg2.png" alt="Volcán de Izalco">
+          <div class="overlay">
+            <h3>Volcán de Izalco</h3>
+            <p>El faro del Pacífico</p>
+          </div>
+        </div>
+        <div class="grid-item item-3">
+          <img src="img/costasol.jpg" alt="Volcán de San Salvador">
+          <div class="overlay">
+            <h3>Volcán de San Salvador</h3>
+            <p>El Boquerón</p>
+          </div>
+        </div>
+        <div class="grid-item item-4">
+          <img src="img/gastroedit.png" alt="Lago de Coatepeque">
+          <div class="overlay">
+            <h3>Lago de Coatepeque</h3>
+            <p>Caldera volcánica</p>
+          </div>
+        </div>
       </div>
-      <div class="cuadro2"><img src="img/marquegastro3.webp"></div>
-      <div class="ancho"><img src="img/marquegastro4.webp"></div>
-    </div>
-    <p>Festivales vibrantes, artesanías y música folklórica que reflejan nuestra identidad.</p>
-  </div>
-  <div class="seccion animate-on-scroll">
-    <div class="subt">Ruta del Café</div>
-    <div class="tit">Café</div>
-    <div class="contenedor cuadricula">
-      <div class="alto"><img src="img/marquegastro5.webp">
+      <div class="info-box animate-slide-left">
+        <h3>La Cadena Volcánica Salvadoreña</h3>
+        <p>El Salvador, apodado "El Valle de las Hamacas" por su actividad sísmica, alberga más de 20 volcanes en su
+          territorio. Estos colosos naturales ofrecen algunas de las vistas más impresionantes del país y experiencias
+          únicas para los amantes del senderismo y la aventura.</p>
+        <p>El Volcán de Santa Ana (Ilamatepec) con su impresionante cráter de aguas turquesas, el imponente Volcán de
+          Izalco conocido históricamente como "El Faro del Pacífico", y el accesible Volcán de San Salvador con su
+          cráter "El Boquerón" son joyas naturales que definen el paisaje salvadoreño.</p>
       </div>
-      <div class="cuadro1"><img src="img/marquegastro6.webp"></div>
-      <div class="cuadro2"><img src="img/pampa.webp"></div>
-      <div class="ancho"><img src="img/pastelitos.webp"></div>
     </div>
-    <p>Visita fincas en Apaneca y disfruta de catas guiadas de uno de los mejores cafés del mundo.</p>
   </div>
+
   <div class="seccion animate-on-scroll">
-    <div class="subt">Sitios Arqueológicos</div>
-    <div class="tit">Historia</div>
-    <div class="contenedor cuadricula">
-      <div class="alto"><img src="img/pexels-allanglezg-30005123.jpg"></div>
-      <div class="cuadro1"><img src="img/pexels-mantoine-1667018.jpg"></div>
-      <div class="cuadro2"><img src="img/ply.png">
+    <div class="contenedor">
+      <div class="subt animate-item">Cultura y Tradiciones</div>
+      <div class="tit animate-item">Cultura</div>
+      <div class="grid-mosaico">
+        <div class="grid-item item-1">
+          <img src="img/marquegastro1.webp" alt="Festival de El Salvador">
+          <div class="overlay">
+            <h3>Fiestas Patronales</h3>
+            <p>Tradiciones centenarias</p>
+          </div>
+        </div>
+        <div class="grid-item item-2">
+          <img src="img/marquegastro2.webp" alt="Artesanías">
+          <div class="overlay">
+            <h3>Artesanía Local</h3>
+            <p>Textiles coloridos</p>
+          </div>
+        </div>
+        <div class="grid-item item-3">
+          <img src="img/marquegastro3.webp" alt="Bailes tradicionales">
+          <div class="overlay">
+            <h3>Danzas Folklóricas</h3>
+            <p>Expresión cultural</p>
+          </div>
+        </div>
+        <div class="grid-item item-4">
+          <img src="img/marquegastro4.webp" alt="Comida típica">
+          <div class="overlay">
+            <h3>Gastronomía Típica</h3>
+            <p>Sabores auténticos</p>
+          </div>
+        </div>
       </div>
-      <div class="ancho"><img src="img/pupusas.webp"></div>
+      <div class="info-box animate-slide-right">
+        <h3>La Riqueza Cultural Salvadoreña</h3>
+        <p>El Salvador posee un vibrante patrimonio cultural que mezcla influencias indígenas, españolas y
+          contemporáneas. Las fiestas patronales, celebradas en cada municipio, son explosiones de color, música y
+          tradición, donde los habitantes honran a sus santos patronos con procesiones, danzas folklóricas y
+          espectáculos pirotécnicos.</p>
+        <p>La artesanía salvadoreña destaca por sus textiles coloridos, cerámicas, trabajos en madera y metal. En
+          pueblos como La Palma, con su distintivo estilo naif colorido creado por Fernando Llort, o Ilobasco, famoso
+          por sus miniaturas de arcilla, se pueden encontrar piezas únicas que representan la creatividad del pueblo
+          salvadoreño.</p>
+      </div>
     </div>
-    <p>Explora Joya de Cerén, Tazumal y San Andrés para un viaje al pasado maya.</p>
   </div>
+
+  <div class="seccion animate-on-scroll">
+    <div class="contenedor">
+      <div class="subt animate-item">Ruta del Café</div>
+      <div class="tit animate-item">Café</div>
+      <div class="grid-zigzag">
+        <div class="grid-item item-1">
+          <img src="img/marquegastro5.webp" alt="Plantación de café">
+          <div class="overlay">
+            <h3>Fincas Cafetaleras</h3>
+            <p>Tradición de altura</p>
+          </div>
+        </div>
+        <div class="grid-item item-2">
+          <img src="img/marquegastro6.webp" alt="Granos de café">
+          <div class="overlay">
+            <h3>Granos Premium</h3>
+            <p>Calidad de exportación</p>
+          </div>
+        </div>
+        <div class="grid-item item-3">
+          <img src="img/pampa.webp" alt="Café preparado">
+          <div class="overlay">
+            <h3>Catas de Café</h3>
+            <p>Experiencia sensorial</p>
+          </div>
+        </div>
+        <div class="grid-item item-4">
+          <img src="img/pastelitos.webp" alt="Región cafetalera">
+          <div class="overlay">
+            <h3>Apaneca-Ilamatepec</h3>
+            <p>Región cafetalera principal</p>
+          </div>
+        </div>
+      </div>
+      <div class="info-box animate-slide-left">
+        <h3>El Salvador: Tierra de Café Excepcional</h3>
+        <p>El café salvadoreño es reconocido mundialmente por su excepcional calidad y sabor distintivo. Cultivado
+          principalmente en las montañas de Apaneca-Ilamatepec, El Bálsamo y Cacahuatique, el café crece en condiciones
+          ideales de altura, clima y suelo volcánico rico en minerales.</p>
+        <p>Los cafés de especialidad Bourbon y Pacamara han ganado prestigiosos premios internacionales. Visitar una
+          finca cafetalera te permite experimentar todo el proceso: desde la siembra y cosecha hasta el procesamiento,
+          tostado y degustación del producto final. Estas experiencias generalmente incluyen recorridos panorámicos,
+          catas especializadas y la oportunidad de comprar café directamente de los productores.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="seccion animate-on-scroll">
+    <div class="contenedor">
+      <div class="subt animate-item">Sitios Arqueológicos</div>
+      <div class="tit animate-item">Historia</div>
+      <div class="grid-cascada">
+        <div class="grid-item item-1">
+          <img src="img/pexels-allanglezg-30005123.jpg" alt="Joya de Cerén">
+          <div class="overlay">
+            <h3>Joya de Cerén</h3>
+            <p>La Pompeya de América</p>
+          </div>
+        </div>
+        <div class="grid-item item-2">
+          <img src="img/pexels-mantoine-1667018.jpg" alt="Tazumal">
+          <div class="overlay">
+            <h3>Tazumal</h3>
+            <p>Centro ceremonial maya</p>
+          </div>
+        </div>
+        <div class="grid-item item-3">
+          <img src="img/ply.png" alt="San Andrés">
+          <div class="overlay">
+            <h3>San Andrés</h3>
+            <p>Centro político prehispánico</p>
+          </div>
+        </div>
+        <div class="grid-item item-4">
+          <img src="img/pupusas.webp" alt="Cihuatán">
+          <div class="overlay">
+            <h3>Cihuatán</h3>
+            <p>Ciudad postclásica</p>
+          </div>
+        </div>
+      </div>
+      <div class="info-box animate-slide-right">
+        <h3>El Legado Maya en El Salvador</h3>
+        <p>El Salvador alberga importantes vestigios arqueológicos que revelan su rico pasado precolombino. El sitio más
+          destacado es Joya de Cerén, declarado Patrimonio Mundial por la UNESCO, conocido como la "Pompeya de América"
+          porque fue preservado por cenizas volcánicas que cubrieron el asentamiento en el siglo VII, congelando en el
+          tiempo la vida cotidiana de sus habitantes.</p>
+        <p>Otros sitios impresionantes incluyen Tazumal en Chalchuapa, con sus imponentes pirámides escalonadas; San
+          Andrés, que fue un importante centro político regional; y Cihuatán, la mayor ciudad prehispánica del país.
+          Estos sitios arqueológicos ofrecen una ventana fascinante al pasado maya y pipil del territorio salvadoreño.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="contenedor">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h3>El Salvador</h3>
+          <p>Un país pequeño con una inmensa riqueza natural, cultural e histórica en el corazón de Centroamérica.</p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h3>Enlaces rápidos</h3>
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="restaurantes.html">Gastronomía</a></li>
+            <li><a href="aventuras.html">Aventuras</a></li>
+            <li><a href="#">Alojamientos</a></li>
+            <li><a href="#">Contacto</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Descubre más</h3>
+          <ul>
+            <li><a href="#">Eventos</a></li>
+            <li><a href="#">Itinerarios</a></li>
+            <li><a href="#">Consejos de viaje</a></li>
+            <li><a href="#">Preguntas frecuentes</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Contacto</h3>
+          <ul>
+            <li><i class="fas fa-map-marker-alt"></i> San Salvador, El Salvador</li>
+            <li><i class="fas fa-phone"></i> +503 2222-3333</li>
+            <li><i class="fas fa-envelope"></i> info@turismo.sv</li>
+          </ul>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>&copy; 2025 El Salvador Turismo. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
 
   <script src="script.js"></script>
 </body>
