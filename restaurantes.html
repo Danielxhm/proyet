@@ -1,86 +1,378 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Gastronomía Salvadoreña</title>
-<link rel="stylesheet" href="css/main.css">
-<link rel="stylesheet" href="css/animate.css">
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gastronomía Salvadoreña</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-<nav class="navegacion">
-  <div class="logo">El Salvador</div>
-  <div class="menu">
-    <a href="index.html">Inicio</a>
-    <a href="restaurantes.html">Restaurantes</a>
-    <a href="aventuras.html">Aventuras</a>
-  </div>
-</nav>
-<section class="encabezado" style="background-image:url('img/pupusas.webp');">
-  <div class="cont animate-on-scroll subt tit">Gastronomía Salvadoreña</div>
-</section>
+  <nav class="navegacion">
+    <div class="logo">El Salvador</div>
+    <div class="menu">
+      <a href="index.html">Inicio</a>
+      <a href="restaurantes.html">Restaurantes</a>
+      <a href="aventuras.html">Aventuras</a>
+    </div>
+    <div class="menu-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
 
-<div class="seccion animate-on-scroll">
-  <div class="subt">Platillo Nacional</div><div class="tit">Pupusas</div>
-  <div class="contenedor cuadricula">
-    <div class="alto"><img src="img/145228.jpg"></div>
-    <div class="cuadro1"><img src="img/73352893-2.webp"></div>
-    <div class="cuadro2"><img src="img/TORREJAS.webp"></div>
-    <div class="ancho"><img src="img/Tamal-de-elote.webp"></div>
-  </div>
-  <p>La pupusa es deliciosa y versátil, rellena de queso, frijol o chicharrón.</p>
-</div>
-<div class="seccion animate-on-scroll">
-  <div class="subt">Receta Tradicional</div><div class="tit">Tamales</div>
-  <div class="contenedor cuadricula">
-    <div class="alto"><img src="img/cafe-santa-cruz.jpg"></div>
-    <div class="cuadro1"><img src="img/catg2.png"></div>
-    <div class="cuadro2"><img src="img/costasol.jpg"></div>
-    <div class="ancho"><img src="img/gastroedit.png"></div>
-  </div>
-  <p>Tamales envueltos en hoja de plátano, perfectos para el desayuno.</p>
-</div>
-<div class="seccion animate-on-scroll">
-  <div class="subt">Del Mar</div><div class="tit">Ceviche</div>
-  <div class="contenedor cuadricula">
-    <div class="alto"><img src="img/marquegastro1.webp"></div>
-    <div class="cuadro1"><img src="img/marquegastro2.webp"></div>
-    <div class="cuadro2"><img src="img/marquegastro3.webp"></div>
-    <div class="ancho"><img src="img/marquegastro4.webp"></div>
-  </div>
-  <p>Ceviche fresco preparado con pescado y mariscos locales.</p>
-</div>
-<div class="seccion animate-on-scroll">
-  <div class="subt">Para los Amantes del Café</div><div class="tit">Cafeterías</div>
-  <div class="contenedor cuadricula">
-    <div class="alto"><img src="img/marquegastro5.webp"></div>
-    <div class="cuadro1"><img src="img/marquegastro6.webp"></div>
-    <div class="cuadro2"><img src="img/pampa.webp"></div>
-    <div class="ancho"><img src="img/pastelitos.webp"></div>
-  </div>
-  <p>Cafeterías con blends locales y postres caseros para una experiencia única.</p>
-</div>
-<div class="seccion animate-on-scroll">
-  <div class="subt">Dulces Tentaciones</div><div class="tit">Postres</div>
-  <div class="contenedor cuadricula">
-    <div class="alto"><img src="img/pexels-allanglezg-30005123.jpg"></div>
-    <div class="cuadro1"><img src="img/pexels-mantoine-1667018.jpg"></div>
-    <div class="cuadro2"><img src="img/ply.png"></div>
-    <div class="ancho"><img src="img/pupusas.webp"></div>
-  </div>
-  <p>Prueba postres tradicionales como tres leches y dulce de atado.</p>
-</div>
-<div class="seccion animate-on-scroll">
-  <div class="subt">Ambiente Local</div><div class="tit">Mercados</div>
-  <div class="contenedor cuadricula">
-    <div class="alto"><img src="img/rnrdytm-VNJviOXyJRU-unsplash.jpg"></div>
-    <div class="cuadro1"><img src="img/sunsetparkbg.png"></div>
-    <div class="cuadro2"><img src="img/tipicosmargoth.webp"></div>
-    <div class="ancho"><img src="img/tunco.jpg"></div>
-  </div>
-  <p>Visita mercados vibrantes llenos de sabores auténticos y artesanías.</p>
-</div>
+  <section class="encabezado" style="background-image: url('img/pupusas.webp');">
+    <div class="cont animate-on-scroll">
+      <div class="titulo-sub animate-item">Sabores auténticos</div>
+      <h1 class="titulo-principal animate-item">Gastronomía Salvadoreña</h1>
+    </div>
+  </section>
 
-<script src="script.js"></script>
+  <div class="seccion animate-on-scroll">
+    <div class="contenedor">
+      <div class="subt animate-item">Platillo Nacional</div>
+      <div class="tit animate-item">Pupusas</div>
+      <div class="grid-mosaico">
+        <div class="grid-item item-1">
+          <img src="img/145228.jpg" alt="Pupusas tradicionales">
+          <div class="overlay">
+            <h3>Pupusas de Queso</h3>
+            <p>Las más populares</p>
+          </div>
+        </div>
+        <div class="grid-item item-2">
+          <img src="img/73352893-2.webp" alt="Pupusas de chicharrón">
+          <div class="overlay">
+            <h3>Pupusas de Chicharrón</h3>
+            <p>Sabor tradicional</p>
+          </div>
+        </div>
+        <div class="grid-item item-3">
+          <img src="img/TORREJAS.webp" alt="Pupusas revueltas">
+          <div class="overlay">
+            <h3>Pupusas Revueltas</h3>
+            <p>Combinación perfecta</p>
+          </div>
+        </div>
+        <div class="grid-item item-4">
+          <img src="img/Tamal-de-elote.webp" alt="Pupusas arroz">
+          <div class="overlay">
+            <h3>Pupusas de Arroz</h3>
+            <p>Variante especial</p>
+          </div>
+        </div>
+      </div>
+      <div class="info-box animate-slide-right">
+        <h3>El Orgullo Culinario Salvadoreño</h3>
+        <p>Las pupusas son, sin duda, el platillo emblemático de El Salvador y fueron declaradas como el plato nacional
+          en 2005. Estas deliciosas tortillas gruesas rellenas tienen orígenes precolombinos y cuentan con una historia
+          de más de 2,000 años.</p>
+        <p>Tradicionalmente hechas con masa de maíz, las pupusas pueden llevar diversos rellenos, siendo los más
+          populares el queso, frijoles refritos, chicharrón (cerdo molido) o una combinación llamada "revueltas". Se
+          sirven acompañadas de curtido (ensalada fermentada de repollo) y salsa de tomate.</p>
+        <p>Cada 13 de noviembre se celebra el Día Nacional de las Pupusas, y en algunos pueblos como Olocuilta, conocido
+          como la "capital de la pupusa", realizan festivales dedicados a este manjar.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="seccion animate-on-scroll">
+    <div class="contenedor">
+      <div class="subt animate-item">Receta Tradicional</div>
+      <div class="tit animate-item">Tamales</div>
+      <div class="grid-galeria">
+        <div class="grid-item item-1">
+          <img src="img/cafe-santa-cruz.jpg" alt="Tamal de elote">
+          <div class="overlay">
+            <h3>Tamal de Elote</h3>
+            <p>Dulce y suave</p>
+          </div>
+        </div>
+        <div class="grid-item item-2">
+          <img src="img/catg2.png" alt="Tamal de gallina">
+          <div class="overlay">
+            <h3>Tamal de Gallina</h3>
+            <p>El más tradicional</p>
+          </div>
+        </div>
+        <div class="grid-item item-3">
+          <img src="img/costasol.jpg" alt="Tamal pisque">
+          <div class="overlay">
+            <h3>Tamal Pisque</h3>
+            <p>Con frijoles</p>
+          </div>
+        </div>
+        <div class="grid-item item-4">
+          <img src="img/gastroedit.png" alt="Tamales preparación">
+          <div class="overlay">
+            <h3>Preparación Artesanal</h3>
+            <p>Tradición culinaria</p>
+          </div>
+        </div>
+      </div>
+      <div class="info-box animate-slide-left">
+        <h3>El Arte del Tamal Salvadoreño</h3>
+        <p>Los tamales salvadoreños son una expresión culinaria ancestral que ha pasado de generación en generación.
+          Envueltos en hojas de plátano (o tusas para los tamales de elote), representan uno de los platillos más
+          representativos de la cocina tradicional del país.</p>
+        <p>Existen diversas variedades, pero las más populares son el tamal de gallina (relleno de pollo, papas,
+          aceitunas, garbanzos y otros ingredientes), el tamal de elote (hecho con maíz tierno molido y con un sabor
+          ligeramente dulce), y el tamal pisque (elaborado con frijoles molidos).</p>
+        <p>La preparación es un verdadero ritual familiar, especialmente durante festividades como Navidad, donde
+          familias enteras se reúnen para elaborar grandes cantidades siguiendo recetas que han permanecido casi
+          intactas por siglos.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="seccion animate-on-scroll">
+    <div class="contenedor">
+      <div class="subt animate-item">Del Mar</div>
+      <div class="tit animate-item">Ceviche</div>
+      <div class="grid-destacado">
+        <div class="grid-item item-1">
+          <img src="img/marquegastro1.webp" alt="Ceviche salvadoreño">
+          <div class="overlay">
+            <h3>Ceviche Tradicional</h3>
+            <p>Con pescado fresco</p>
+          </div>
+        </div>
+        <div class="grid-item item-2">
+          <img src="img/marquegastro2.webp" alt="Ceviche mixto">
+          <div class="overlay">
+            <h3>Ceviche Mixto</h3>
+            <p>Combinación de mariscos</p>
+          </div>
+        </div>
+        <div class="grid-item item-3">
+          <img src="img/marquegastro3.webp" alt="Ceviche de camarón">
+          <div class="overlay">
+            <h3>Ceviche de Camarón</h3>
+            <p>Sabor intenso del mar</p>
+          </div>
+        </div>
+        <div class="grid-item item-4">
+          <img src="img/marquegastro4.webp" alt="Ceviche negro">
+          <div class="overlay">
+            <h3>Ceviche Negro</h3>
+            <p>Con tinta de calamar</p>
+          </div>
+        </div>
+      </div>
+      <div class="info-box animate-slide-right">
+        <h3>El Sabor del Pacífico Salvadoreño</h3>
+        <p>El ceviche salvadoreño refleja la riqueza del litoral pacífico del país. A diferencia de otras variantes
+          latinoamericanas, se caracteriza por utilizar conchas, camarones o pescado (generalmente corvina o pargo)
+          "cocidos" en jugo de limón, mezclados con cebolla, tomate, cilantro y chile verde.</p>
+        <p>Se sirve típicamente con salsa negra (una salsa fermentada local), limón extra, salsa picante y acompañado de
+          tostadas o chips de plátano. Los mejores lugares para degustar auténtico ceviche salvadoreño son los puertos y
+          playas como La Libertad, donde la frescura de los ingredientes está garantizada.</p>
+        <p>Durante el fin de semana, los mercados de mariscos se llenan de visitantes que buscan disfrutar esta
+          refrescante delicia que combina perfectamente la acidez del limón con la frescura del mar.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="seccion animate-on-scroll">
+    <div class="contenedor">
+      <div class="subt animate-item">Para los Amantes del Café</div>
+      <div class="tit animate-item">Cafeterías</div>
+      <div class="grid-zigzag">
+        <div class="grid-item item-1">
+          <img src="img/marquegastro5.webp" alt="Café de especialidad">
+          <div class="overlay">
+            <h3>Café de Especialidad</h3>
+            <p>Métodos artesanales</p>
+          </div>
+        </div>
+        <div class="grid-item item-2">
+          <img src="img/marquegastro6.webp" alt="Cafetería local">
+          <div class="overlay">
+            <h3>El Cafecito</h3>
+            <p>Ambiente acogedor</p>
+          </div>
+        </div>
+        <div class="grid-item item-3">
+          <img src="img/pampa.webp" alt="Pasteles locales">
+          <div class="overlay">
+            <h3>Repostería Local</h3>
+            <p>Compañeros perfectos</p>
+          </div>
+        </div>
+        <div class="grid-item item-4">
+          <img src="img/pastelitos.webp" alt="Barista salvadoreño">
+          <div class="overlay">
+            <h3>Arte del Barista</h3>
+            <p>Preparaciones especiales</p>
+          </div>
+        </div>
+      </div>
+      <div class="info-box animate-slide-left">
+        <h3>La Nueva Ola Cafetera Salvadoreña</h3>
+        <p>El Salvador está experimentando un renacimiento en su cultura cafetalera. Más allá de ser un importante
+          productor y exportador, el país ahora cuenta con una vibrante escena de cafeterías que elevan la experiencia
+          del consumo local de café.</p>
+        <p>En ciudades como San Salvador, Santa Tecla y Santa Ana, las cafeterías de especialidad ofrecen granos de
+          origen único cultivados en las montañas salvadoreñas, preparados con diversos métodos como pour-over, prensa
+          francesa, aeropress o espresso. Estos establecimientos suelen complementar sus ofertas con repostería
+          artesanal que fusiona sabores tradicionales con técnicas modernas.</p>
+        <p>Muchas cafeterías trabajan directamente con pequeños productores, creando una cadena de valor más justa y
+          sostenible que beneficia tanto a los agricultores como a los consumidores, quienes pueden disfrutar de una
+          taza con trazabilidad completa.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="seccion animate-on-scroll">
+    <div class="contenedor">
+      <div class="subt animate-item">Dulces Tentaciones</div>
+      <div class="tit animate-item">Postres</div>
+      <div class="grid-panorama">
+        <div class="grid-item item-1">
+          <img src="img/pexels-allanglezg-30005123.jpg" alt="Quesadilla salvadoreña">
+          <div class="overlay">
+            <h3>Quesadilla</h3>
+            <p>Pan dulce con queso</p>
+          </div>
+        </div>
+        <div class="grid-item item-2">
+          <img src="img/pexels-mantoine-1667018.jpg" alt="Tres leches">
+          <div class="overlay">
+            <h3>Tres Leches</h3>
+            <p>Pastel húmedo tradicional</p>
+          </div>
+        </div>
+        <div class="grid-item item-3">
+          <img src="img/ply.png" alt="Nuégados">
+          <div class="overlay">
+            <h3>Nuégados</h3>
+            <p>Con miel de panela</p>
+          </div>
+        </div>
+        <div class="grid-item item-4">
+          <img src="img/pupusas.webp" alt="Semita">
+          <div class="overlay">
+            <h3>Semita</h3>
+            <p>Con piña o guayaba</p>
+          </div>
+        </div>
+      </div>
+      <div class="info-box animate-slide-right">
+        <h3>La Dulce Tradición Salvadoreña</h3>
+        <p>La repostería y los dulces tradicionales salvadoreños son un tesoro culinario que combina técnicas españolas
+          con ingredientes locales como la panela, frutas tropicales y leche. Cada festividad tiene sus propias
+          especialidades dulces que forman parte esencial de la celebración.</p>
+        <p>Entre los más populares están la quesadilla (un pan dulce con queso y sésamo), los nuégados (bolitas de yuca
+          o plátano fritas servidas con miel de panela), la semita (pasteles rellenos de mermelada de piña o guayaba), y
+          el tres leches, un pastel empapado en tres tipos de leche que se ha convertido en un favorito para
+          celebraciones.</p>
+        <p>Estos dulces tradicionales pueden encontrarse en panaderías locales, mercados y dulcerías especializadas como
+          las de Ahuachapán y Sonsonate, donde los métodos de elaboración artesanal se mantienen vivos.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="seccion animate-on-scroll">
+    <div class="contenedor">
+      <div class="subt animate-item">Ambiente Local</div>
+      <div class="tit animate-item">Mercados</div>
+      <div class="grid-cascada">
+        <div class="grid-item item-1">
+          <img src="img/rnrdytm-VNJviOXyJRU-unsplash.jpg" alt="Mercado central">
+          <div class="overlay">
+            <h3>Mercado Central</h3>
+            <p>El más grande del país</p>
+          </div>
+        </div>
+        <div class="grid-item item-2">
+          <img src="img/sunsetparkbg.png" alt="Puestos de comida">
+          <div class="overlay">
+            <h3>Comedores Típicos</h3>
+            <p>Experiencia auténtica</p>
+          </div>
+        </div>
+        <div class="grid-item item-3">
+          <img src="img/tipicosmargoth.webp" alt="Frutas y verduras">
+          <div class="overlay">
+            <h3>Productos Frescos</h3>
+            <p>Directamente del agricultor</p>
+          </div>
+        </div>
+        <div class="grid-item item-4">
+          <img src="img/tunco.jpg" alt="Artesanías">
+          <div class="overlay">
+            <h3>Artesanías Locales</h3>
+            <p>Souvenirs únicos</p>
+          </div>
+        </div>
+      </div>
+      <div class="info-box animate-slide-left">
+        <h3>El Corazón Gastronómico de El Salvador</h3>
+        <p>Los mercados salvadoreños son el mejor lugar para sumergirse en la auténtica cultura culinaria del país.
+          Bulliciosos, coloridos y llenos de vida, estos espacios ofrecen una experiencia sensorial completa donde se
+          pueden encontrar desde ingredientes frescos hasta comida preparada al momento.</p>
+        <p>El Mercado Central de San Salvador es el más grande y emblemático, mientras que mercados regionales como el
+          de Santa Ana o Sonsonate tienen sus propias especialidades. Los comedores populares dentro de estos mercados
+          sirven platos tradicionales como sopa de pata, yuca frita con chicharrón, pasteles (empanadas de masa de maíz
+          rellenas) y atol de elote.</p>
+        <p>Visitar un mercado local no solo es una oportunidad para probar la auténtica cocina salvadoreña a precios
+          accesibles, sino también para interactuar con los vendedores y conocer las dinámicas culturales que hacen de
+          estos espacios el verdadero corazón de la gastronomía nacional.</p>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="contenedor">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h3>El Salvador</h3>
+          <p>Un país pequeño con una inmensa riqueza natural, cultural e histórica en el corazón de Centroamérica.</p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h3>Enlaces rápidos</h3>
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="restaurantes.html">Gastronomía</a></li>
+            <li><a href="aventuras.html">Aventuras</a></li>
+            <li><a href="#">Alojamientos</a></li>
+            <li><a href="#">Contacto</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Descubre más</h3>
+          <ul>
+            <li><a href="#">Eventos</a></li>
+            <li><a href="#">Itinerarios</a></li>
+            <li><a href="#">Consejos de viaje</a></li>
+            <li><a href="#">Preguntas frecuentes</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Contacto</h3>
+          <ul>
+            <li><i class="fas fa-map-marker-alt"></i> San Salvador, El Salvador</li>
+            <li><i class="fas fa-phone"></i> +503 2222-3333</li>
+            <li><i class="fas fa-envelope"></i> info@turismo.sv</li>
+          </ul>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>&copy; 2025 El Salvador Turismo. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
+
 </html>
